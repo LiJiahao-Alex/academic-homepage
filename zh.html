@@ -13,7 +13,7 @@
 <body>
   <a class="skip" href="#main">跳至正文</a>
   <header class="frame masthead">
-    <a class="brand" href="#main">李嘉豪</a>
+    <a class="brand" href="#main" aria-label="学术主页"><span class="brand-mark" aria-hidden="true"></span></a>
     <nav aria-label="主导航">
       <a href="#research">研究方向</a>
       <a href="#publications">论文</a>
@@ -26,13 +26,12 @@
   <main class="frame" id="main" tabindex="-1">
     <section class="hero" aria-labelledby="name">
       <div>
-        <h1 id="name">李嘉豪</h1>
+        <div class="name-line">
+          <h1 id="name">李嘉豪</h1>
+          <p class="email" lang="en">lijiahao [AT] ict.ac.cn</p>
+        </div>
         <p class="appointment">助理研究员 · <a href="https://ict.cas.cn/">中国科学院计算技术研究所</a></p>
         <p class="intro">我关注两个问题：机器学习系统如何发现训练中未见过的异常，数据所有者如何防止数据被用于未经授权的模型训练。近期研究主要围绕异常检测中的记忆机制和不可学习数据展开。</p>
-        <p class="profile-links">
-          <a href="mailto:lijiahao@ict.ac.cn">lijiahao@ict.ac.cn</a>
-          <a href="https://scholar.google.com/citations?hl=en&amp;user=aNFn6jkAAAAJ" lang="en">Google Scholar</a>
-        </p>
       </div>
       <img src="portrait.jpg" alt="李嘉豪的照片" width="1024" height="1024">
     </section>
@@ -44,7 +43,7 @@
           <li><strong>机器学习中的数据保护。</strong> 研究如何构造不可学习数据，使图像在经过变换后仍能抵御未经授权的训练。</li>
           <li><strong>开放世界与鲁棒感知。</strong> 研究模型如何处理真实场景中未见过的输入。</li>
         </ul>
-        <p class="subsection" id="contact">欢迎同行探讨合作，也欢迎对机器学习、计算机视觉或表示学习感兴趣的同学<a href="mailto:lijiahao@ict.ac.cn">来信</a>。邮件中可以简要介绍自己的背景，以及想讨论的研究方向或具体问题。</p>
+        <p class="subsection" id="contact">欢迎同行探讨合作，也欢迎对机器学习、计算机视觉或表示学习感兴趣的同学联系。邮件中可以简要介绍自己的背景，以及想讨论的研究方向或具体问题。</p>
       </div>
     </section>
     <section class="block" id="publications" aria-labelledby="publications-title">
@@ -100,14 +99,15 @@
       <h2 id="patents-title">专利</h2>
       <div>
         <p><a href="https://patents.google.com/patent/CN119760515B/zh">一种多元时间序列的无监督异常感知系统、异常检测方法</a></p>
+        <p class="meta">发明人 · 陈益强、<strong>李嘉豪</strong>、邢云冰</p>
         <p class="meta">CN119760515B · 授权</p>
       </div>
     </section>
     <section class="block" id="projects" aria-labelledby="projects-title">
-      <h2 id="projects-title">代表性科研项目</h2>
+      <h2 id="projects-title">代表性项目</h2>
       <ul class="clean-list short-list" role="list">
-        <li>判别生成一体多模态基础模型 <span class="meta">· 国家重大攻关项目</span></li>
-        <li>基于算力网的智能感知计算技术与平台 <span class="meta">· 国家重大攻关项目 · PCL2023A08</span></li>
+        <li>判别生成一体多模态基础模型 <span class="meta">· 国家重大攻关任务</span></li>
+        <li>基于算力网的智能感知计算技术与平台 <span class="meta">· 国家重大攻关任务</span></li>
         <li>北京 2022 年冬奥会手语数字人播报系统 <span class="meta">· 北京市科委项目</span></li>
       </ul>
     </section>
@@ -116,23 +116,15 @@
       <div>
         <h3>教育与科研经历</h3>
         <ul class="clean-list short-list" role="list">
-          <li>中国科学院大学计算机科学与技术专业工学博士，2025 年。在中国科学院计算技术研究所开展博士研究，师从<a href="https://www.ict.cas.cn/sourcedb/cn/jssrck/200909/t20090917_2496596.html">陈益强</a>研究员。</li>
-          <li>鹏城国家实验室科研助理，2022–2025 年。</li>
-          <li>山东大学计算数学专业理学学士，2020 年。</li>
+          <li>中科院计算所，计算机科学与技术，博士，导师陈益强。</li>
+          <li>鹏城国家实验室，重大攻关任务，2022–2025 年。</li>
+          <li>山东大学，计算数学，学士。</li>
         </ul>
         <div class="subsection">
           <h3>学术服务</h3>
           <ul class="clean-list short-list" role="list">
-            <li><strong>受邀程序委员会委员</strong> · MMM 2027</li>
-            <li><strong>受邀期刊审稿</strong> · <i lang="en">Pattern Recognition</i>、<i lang="en">IEEE Transactions on Sustainable Computing</i></li>
-            <li><strong>受邀会议审稿</strong>
-              <ul class="clean-list" role="list">
-                <li><time datetime="2027">2027</time> · ICASSP、AAAI、IJCNN、NeurIPS</li>
-                <li><time datetime="2026">2026</time> · AAAI、ACML、IJCNN、ICASSP、ICME</li>
-                <li><time datetime="2025">2025</time> · NeurIPS、ACML、ICME、IJCNN、ICASSP</li>
-                <li><time datetime="2024">2024</time> · ACML、SIGKDD、CIKM</li>
-              </ul>
-            </li>
+            <li><strong>审稿</strong> · <i lang="en">Pattern Recognition</i>、AAAI（2026、2027）、NeurIPS（2025、2027）、SIGKDD（2024）、ICASSP（2025、2026、2027）、ICME（2025、2026）、CIKM（2024）、ACML（2024、2025、2026）、IJCNN（2025、2026、2027）</li>
+            <li><strong>程序委员会委员（PC member）</strong> · MMM（2027）</li>
           </ul>
         </div>
       </div>

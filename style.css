@@ -39,7 +39,7 @@ a {
 .frame { width: min(100% - 3rem, 61rem); margin-inline: auto; }
 .masthead {
   display: flex;
-  align-items: baseline;
+  align-items: center;
   justify-content: space-between;
   gap: 1rem 2rem;
   padding-block: 1.1rem;
@@ -47,7 +47,25 @@ a {
   border-block-end: 1px solid var(--line);
   margin-block-start: 1.5rem;
 }
-.brand { color: var(--ink); font-weight: 700; text-decoration: none; }
+.brand {
+  display: grid;
+  place-items: center;
+  flex: none;
+  width: 2rem;
+  height: 2rem;
+  background: var(--accent);
+  color: var(--paper);
+}
+.brand-mark { display: flex; gap: 2px; }
+.brand-mark::before,
+.brand-mark::after {
+  content: "";
+  width: .46rem;
+  height: .6rem;
+  border: 1px solid currentColor;
+}
+.brand-mark::before { border-radius: 2px 0 0 0; transform: skewY(10deg); }
+.brand-mark::after { border-radius: 0 2px 0 0; transform: skewY(-10deg); }
 nav {
   display: flex;
   flex-wrap: wrap;
@@ -86,13 +104,19 @@ h1 {
 :lang(zh-CN) h1 { letter-spacing: .03em; }
 .appointment { margin-block-start: .65rem; color: var(--muted); }
 .intro { margin-block-start: 1rem; max-width: 38rem; }
-.profile-links, .paper-links {
+.name-line {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: .4rem 1rem;
+}
+.email { color: var(--accent); font: .9rem/1.55 var(--sans); }
+.paper-links {
   display: flex;
   flex-wrap: wrap;
   gap: .15rem 1rem;
   font: .86rem/1.65 var(--sans);
 }
-.profile-links { margin-block-start: 1rem; }
 .block {
   display: grid;
   grid-template-columns: 11rem minmax(0, 1fr);

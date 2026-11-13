@@ -53,8 +53,8 @@ a {
   flex: none;
   width: 2rem;
   height: 2rem;
-  background: var(--accent);
-  color: var(--paper);
+  color: var(--muted);
+  opacity: .82;
 }
 .brand-mark { display: flex; gap: 2px; }
 .brand-mark::before,
@@ -111,12 +111,6 @@ h1 {
   gap: .4rem 1rem;
 }
 .email { color: var(--accent); font: .9rem/1.55 var(--sans); }
-.paper-links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: .15rem 1rem;
-  font: .86rem/1.65 var(--sans);
-}
 .block {
   display: grid;
   grid-template-columns: 11rem minmax(0, 1fr);
@@ -135,7 +129,6 @@ h3 { font-size: 1.075rem; line-height: 1.45; }
 .paper-title { color: var(--ink); }
 .meta { color: var(--muted); font: .85rem/1.55 var(--sans); }
 .paper .meta { margin-block-start: .25rem; }
-.paper-links { margin-block-start: .35rem; }
 .subsection { margin-block-start: 1.35rem; }
 .subsection h3 { margin-block-end: .55rem; }
 footer {

@@ -51,21 +51,22 @@ a {
   display: grid;
   place-items: center;
   flex: none;
-  width: 2rem;
-  height: 2rem;
-  color: var(--muted);
-  opacity: .82;
+  width: 2.25rem;
+  height: 2.25rem;
+  color: var(--accent);
+  text-decoration: none;
 }
-.brand-mark { display: flex; gap: 2px; }
-.brand-mark::before,
-.brand-mark::after {
-  content: "";
-  width: .46rem;
-  height: .6rem;
-  border: 1px solid currentColor;
+.brand-mark {
+  display: grid;
+  place-items: center;
+  width: 1.88rem;
+  height: 1.88rem;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  padding-inline-end: .06em;
+  font: 500 1.15rem/1 Georgia, "Times New Roman", serif;
+  letter-spacing: -.1em;
 }
-.brand-mark::before { border-radius: 2px 0 0 0; transform: skewY(10deg); }
-.brand-mark::after { border-radius: 0 2px 0 0; transform: skewY(-10deg); }
 nav {
   display: flex;
   flex-wrap: wrap;
@@ -132,10 +133,26 @@ h3 { font-size: 1.075rem; line-height: 1.45; }
 .subsection { margin-block-start: 1.35rem; }
 .subsection h3 { margin-block-end: .55rem; }
 footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: .65rem 1rem;
   padding-block: 1rem 2rem;
   border-block-start: 1px solid var(--line);
   color: var(--muted);
   font: .84rem/1.55 var(--sans);
+}
+
+.back-to-top {
+  display: inline-flex;
+  align-items: center;
+  gap: .35em;
+  min-height: 2rem;
+  padding-inline: .6rem;
+  border: 1px solid var(--line);
+  border-radius: 2px;
+  text-decoration: none;
 }
 
 @media (max-width: 48rem) {
